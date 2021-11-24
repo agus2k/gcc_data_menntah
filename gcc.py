@@ -807,21 +807,21 @@ elif option == 'Prediksi':
 
         st.subheader('Support Vector Machine')
         if hasil_svm[0]==1:
-            st.write('Dengan menggunakan metode SVM maka {} akan bekerja dengan **GAJI DIATAS/SAMA DENGAN UMR** wilayah {} dengan tingkat akurasi {}%'.format(nama,kota,round(akurasi_svm[0][1]*100),3))
+            st.write('Dengan menggunakan metode SVM maka {} akan bekerja dengan **GAJI DIATAS/SAMA DENGAN UMR** wilayah {} dengan tingkat peluang {}%'.format(nama,kota,round(akurasi_svm[0][1]*100),3))
         else:
-            st.write('Dengan menggunakan metode SVM maka {} akan bekerja dengan **GAJI DIBAWAH UMR** wilayah {} dengan tingkat akurasi {}%'.format(nama,kota,round(akurasi_svm[0][1]*100),3))
+            st.write('Dengan menggunakan metode SVM maka {} akan bekerja dengan **GAJI DIBAWAH UMR** wilayah {} dengan tingkat peluang {}%'.format(nama,kota,round(akurasi_svm[0][1]*100),3))
 
         st.subheader('Naive Bayes')
         if hasil_nb[0]==1:
-            st.write('Dengan menggunakan metode Naive Bayes maka {} akan bekerja dengan **GAJI DIATAS/SAMA DENGAN UMR** wilayah {} dengan tingkat akurasi {}%'.format(nama,kota,round(akurasi_nb[0][1]*100),3))
+            st.write('Dengan menggunakan metode Naive Bayes maka {} akan bekerja dengan **GAJI DIATAS/SAMA DENGAN UMR** wilayah {} dengan tingkat peluang {}%'.format(nama,kota,round(akurasi_nb[0][1]*100),3))
         else:
-            st.write('Dengan menggunakan metode Naive Bayes maka {} akan bekerja dengan **GAJI DIBAWAH UMR** wilayah {} dengan tingkat akurasi {}%'.format(nama,kota,round(akurasi_nb[0][1]*100),3))
+            st.write('Dengan menggunakan metode Naive Bayes maka {} akan bekerja dengan **GAJI DIBAWAH UMR** wilayah {} dengan tingkat peluang {}%'.format(nama,kota,round(akurasi_nb[0][1]*100),3))
 
         st.subheader('K-Nearest Neighbor')
         if hasil_knn[0]==1:
-            st.write('Dengan menggunakan metode KNN maka {} akan bekerja dengan **GAJI DIATAS/SAMA DENGAN UMR** wilayah {} dengan tingkat akurasi {}%'.format(nama,kota,round(akurasi_knn[0][1]*100),3))
+            st.write('Dengan menggunakan metode KNN maka {} akan bekerja dengan **GAJI DIATAS/SAMA DENGAN UMR** wilayah {} dengan tingkat peluang {}%'.format(nama,kota,round(akurasi_knn[0][1]*100),3))
         else:
-            st.write('Dengan menggunakan metode KNN maka {} akan bekerja dengan **GAJI DIBAWAH UMR** wilayah {} dengan tingkat akurasi {}%'.format(nama,kota,round(akurasi_knn[0][1]*100),3))
+            st.write('Dengan menggunakan metode KNN maka {} akan bekerja dengan **GAJI DIBAWAH UMR** wilayah {} dengan tingkat peluang {}%'.format(nama,kota,round(akurasi_knn[0][1]*100),3))
         
 
 
